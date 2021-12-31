@@ -1,34 +1,32 @@
 [custom]
 ;不要随意改变关键字，否则会导致出错
-;acl4SSR规则-在线更新版
+;acl4SSR规则-在线版
 
 ;去广告：支持
 ;自动测速：支持
-;微软分流：支持
-;苹果分流：支持
+;微软分流：不支持
+;苹果分流：不支持
 ;增强中国IP段：不支持
 ;增强国外GFW：不支持
 
-ruleset=🎯 全球直连,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=🎯 全球直连,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=🛑 **********写入网络规则**********,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=🍃 *********无法用于其他用途*********,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=📢 ********谷歌地球独立激活器********,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=🎯 全球直连,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=🚀 节点选择,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=🎯 全球直连,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=🎯 全球直连,https://raw.githubusercontent.com/zhengss1/clash/main/lanjie.list
-ruleset=🎯 全球直连,[]GEOIP,CN
-ruleset=🐟 ****关键提示：请切勿乱点会导致失效****,[]FINAL
+ruleset=全球直连,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=全球直连,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=全球拦截,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=全球拦截,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=全球直连,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=节点选择,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=节点选择,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=节点选择,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=全球直连,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=全球直连,https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=全球直连,[]GEOIP,CN
+ruleset=漏网之鱼,[]FINAL
 
-custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]DIRECT`.*
-custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择
-custom_proxy_group=📢 ********谷歌地球独立激活器********`select`[]🚀 节点选择`[]🎯 全球直连`[]♻️ 自动选择`.*
-custom_proxy_group=🛑 **********写入网络规则**********`select`[]REJECT`[]DIRECT
-custom_proxy_group=🍃 *********无法用于其他用途*********`select`[]REJECT`[]DIRECT
-custom_proxy_group=🐟 ****关键提示：请切勿乱点会导致失效****`select`[]🚀 节点选择`[]🎯 全球直连`[]♻️ 自动选择`.*
-
+custom_proxy_group=节点选择`select`[]自动选择`[]DIRECT`.*
+custom_proxy_group=自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=全球直连`select`[]DIRECT`[]节点选择`[]自动选择
+custom_proxy_group=全球拦截`select`[]REJECT`[]DIRECT
+custom_proxy_group=漏网之鱼`select`[]节点选择`[]全球直连`[]自动选择`.*
 
 enable_rule_generator=true
 overwrite_original_rules=true
