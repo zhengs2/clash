@@ -10,8 +10,8 @@
 ;增强国外GFW：不支持
 
 
-ruleset=全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-ruleset=全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=全球拦截,https://raw.https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
+ruleset=全球拦截,https://raw.https://raw.githubusercontent.com/zhengs2/clash/main/lanjie.list
 ruleset=全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
 ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
 ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
